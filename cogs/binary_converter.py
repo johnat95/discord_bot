@@ -9,7 +9,7 @@ class BinaryConverter(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print("Ready")
+        print("Bot is Ready")
 
 
 async def setup(bot):
