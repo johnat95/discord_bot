@@ -32,7 +32,7 @@ bot = commands.Bot(intents=intent, command_prefix=prefix)
 async def load_ext():
     """get a list of the files in the ./cog folder, these files each contain a class which inherits
     the commands.Cog class. These classes contain collections of methods decorated with @commands.command,
-    which can be called froma direct message to the bot, leading with the command prefix.
+    which can be called from a direct message to the bot, leading with the command prefix.
 
     ie. $method_name args
     """ 
