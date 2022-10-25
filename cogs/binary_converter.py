@@ -17,7 +17,7 @@ class BinaryConverter(commands.Cog):
 
 
         int_to_binary_breakdown is called by sending "$int_to_binary_breakdown num" where
-        num is a positive integer in a direct message to the bot, 
+        num is a integer in a direct message to the bot, 
         the number is converted into binary, which is sent back in a message, along with the
         equation for each bit. Does not contain leading zeros.
 
