@@ -1,3 +1,7 @@
+#programmer: Nathan Johnston
+
+#purpose: converts numbers to binary, with the option of breaking down the math at each bit
+
 from discord.ext import commands
 
 

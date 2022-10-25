@@ -1,3 +1,8 @@
+#programmer: Nathan Johnston
+
+#purpose start a bot that automatice detects new cog class files in thge ./cog folders.
+
+
 import asyncio
 import discord
 from discord.ext import commands
@@ -11,7 +16,7 @@ env_path =  os.path.abspath(os.path.dirname(__file__) + "/bot.env")
 #load enviroment variables
 load_dotenv(env_path)
 
-#get bot token
+#get bot token from envroment
 token = str(os.getenv("TOKEN"))
 
 #location of cog classes
@@ -25,10 +30,12 @@ intent = discord.Intents.default()
 bot = commands.Bot(intents=intent, command_prefix=prefix)
 
 async def load_ext():
+    #get a list of the files in the ./cog folder
     for file in os.listdir(cogs_dir):
 
         if (file.endswith('.py')):
 
+            #load file if its a python file
             await bot.load_extension(F'cogs.{file[:-3]}')
             print("Loading " + file)
 
