@@ -24,11 +24,6 @@ intent = discord.Intents.default()
 
 bot = commands.Bot(intents=intent, command_prefix=prefix)
 
-@bot.event
-async def on_ready(self):
-    print("Bot Online and Fully Functional")
-
-
 async def load_ext():
     for file in os.listdir(cogs_dir):
 
