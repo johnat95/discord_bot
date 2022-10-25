@@ -48,7 +48,7 @@ class BinaryConverter(commands.Cog):
        await print("Binary Conversion Online")
 
     @commands.command()
-    async def get_help(self, ctx):
+    async def docu(self, ctx):
        await ctx.send(self.docs)
 
    
