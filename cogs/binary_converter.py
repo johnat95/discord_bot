@@ -7,21 +7,21 @@ from discord.ext import commands
 
 class BinaryConverter(commands.Cog):
 
-    docs = """The int_to_binary method is called by sending "$int_to_binary num" where
+    docs = """The int_binary method is called by sending "$int_binary num" where
         num is a positive integer in a direct message to the bot,
         the number is converted into binary, which is sent back in a message
         Does not contain leading zeros.
 
-        #Example: "$int_to_binary 234" sends 11101010
-        #Example: "$int_to_binary 1" sends 1
+        #Example: "$int_binary 234" sends 11101010
+        #Example: "$int_binary 1" sends 1
 
 
-        int_to_binary_breakdown is called by sending "$int_to_binary_breakdown num" where
+        int_binary_breakdown is called by sending "$int_binary_breakdown num" where
         num is a integer in a direct message to the bot, 
         the number is converted into binary, which is sent back in a message, along with the
         equation for each bit. Does not contain leading zeros.
 
-        #Example: "$int_to_binary_breakdown 10" sends:
+        #Example: "$int_binary_breakdown 10" sends:
 
         10 represented in binary is 1010,
         and breaks down from left to right like so:
