@@ -48,8 +48,8 @@ class BinaryConverter(commands.Cog):
        await print("Binary Conversion Online")
 
     @commands.command()
-    async def get_help(self, ctx, docs):
-       await ctx.send(docs)
+    async def get_help(self, ctx):
+       await ctx.send(self.docs)
 
    
     # takes a number as an argument and sends a message back with the number in binary
