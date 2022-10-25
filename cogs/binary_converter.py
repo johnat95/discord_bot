@@ -2,7 +2,8 @@ from discord.ext import commands
 
 
 class BinaryConverter(commands.Cog):
-    """The int_to_binary method is called by sending "$int_to_binary num" where
+
+    docs = """The int_to_binary method is called by sending "$int_to_binary num" where
         num is a positive integer in a direct message to the bot,
         the number is converted into binary, which is sent back in a message
         Does not contain leading zeros.
@@ -41,6 +42,10 @@ class BinaryConverter(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
        await print("Binary Conversion Online")
+
+    @commands.command()
+    async def get_help(ctx, docs):
+       await ctx.send(docs)
 
    
     # takes a number as an argument and sends a message back with the number in binary
