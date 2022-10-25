@@ -1,4 +1,3 @@
-import discord
 from discord.ext import commands
 
 
@@ -9,7 +8,7 @@ class BinaryConverter(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print("Bot is Ready")
+        print("Binary Conversion Online")
 
 
 async def setup(bot):
