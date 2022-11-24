@@ -1,6 +1,6 @@
 #programmer: Nathan Johnston
 
-#purpose start a bot that automatice detects new cog class files in thge ./cog folders.
+#purpose: start a bot that automaticly detects new cog class files in the ./cog folder.
 
 
 import asyncio
