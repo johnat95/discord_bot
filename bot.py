@@ -1,5 +1,3 @@
-#programmer: Nathan Johnston
-
 #purpose: start a bot that automaticly detects new cog class files in the ./cog folder.
 
 
@@ -18,7 +16,7 @@ load_dotenv(env_path)
 
 #get bot token from envroment
 token = str(os.getenv("TOKEN"))
-
+d
 #location of cog classes
 cogs_dir = './cogs/'
 
@@ -33,8 +31,6 @@ async def load_ext():
     """get a list of the files in the ./cog folder, these files each contain a class which inherits
     the commands.Cog class. These classes contain collections of methods decorated with @commands.command,
     which can be called from a direct message to the bot, leading with the command prefix.
-
-    ie. $method_name args
     """ 
 
     for file in os.listdir(cogs_dir):
@@ -54,8 +50,8 @@ async def main():
         await bot.start(token)
         
     except discord.HTTPException as ex:
-        #prints a string representing the error
-        print(repr(ex))
+        #fa
+        print("Unauthorized! Check your Token.")
 
 
 asyncio.run(main())
