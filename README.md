@@ -41,4 +41,16 @@ https://discord.com/login?redirect_to=%2Fdevelopers
 To Run:
 
   While the enviroment is activated, type python bot.py to start and ctrl + c to stop
+  
+To update from original repo:
+
+Add a new remote upstream repository:
+ 
+    git remote add upstream https://github.com/aswccProgrammingClub/discord_bot.git
+
+Sync your fork:
+   
+    git fetch upstream
+    git checkout main
+    git merge upstream/main
 
