@@ -30,7 +30,7 @@ After activating enviroment, command line should show (venv) at the start of the
 
 Enter:
 
-  pip install discord.py python-dotenv
+    pip install discord.py python-dotenv
 
 For development testing:
 
