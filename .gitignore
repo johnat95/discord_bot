@@ -1,2 +1,3 @@
 .vscode/
-bot.env
+.env
+.pyc
