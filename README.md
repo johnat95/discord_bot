@@ -46,7 +46,7 @@ To update from original repo:
 
 Add a new remote upstream repository:
  
-    git remote add upstream https://github.com/aswccProgrammingClub/discord_bot.git
+    git remote add upstream https://github.com/aswccProgrammingClub/Pybot.git
 
 Sync your fork:
    
