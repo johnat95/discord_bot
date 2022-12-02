@@ -1,4 +1,4 @@
-# discord_bot
+# Pybot
 
 This is a discord bot built with discord.py. To offer new cogs, or changes to the bot.py file, please initiate a pull request!
 
